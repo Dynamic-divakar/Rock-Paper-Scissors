@@ -90,7 +90,7 @@ rock-paper-scissors/
 
 ## 👤 Author
 
-Made with ❤️ by [Divakar Sathivada](https://github.com/Dynamic-divakar)
+Made by [Divakar Sathivada](https://github.com/Dynamic-divakar)
 
 ---
 
