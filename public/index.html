@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="roomInput">
+    <h2>Rock Paper Scissors</h2>
+    <button id="hostBtn">Host Game</button>
+    <p id="generatedCode" style="margin-top: 10px; font-weight: bold;"></p>
+    <br /><br />
+    <input type="text" id="joinCodeInput" placeholder="Enter Code to Join" />
+    <button id="joinGameBtn">Join Game</button>
+    <p id="generatedCode" style="margin-top: 10px; font-weight: bold;"></p>
+  </div>
+
+
+  <div id="gameArea" class="hidden">
+    <h2 id="status">Waiting for opponent...</h2>
+    <p id="gameCodeText" style="margin: 10px 0; font-size: 16px; font-weight: bold;"></p>
+
+
+    <div id="scoreboard">
+      <h3>Score</h3>
+      <p>You: <span id="yourScore">0</span> | Opponent: <span id="opponentScore">0</span></p>
+    </div>
+
+    <div id="choices" class="hidden">
+      <button class="choiceBtn" data-choice="rock">✊ Rock</button>
+      <button class="choiceBtn" data-choice="paper">✋ Paper</button>
+      <button class="choiceBtn" data-choice="scissors">✌️ Scissors</button>
+    </div>
+
+    <h3 id="resultText"></h3>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
