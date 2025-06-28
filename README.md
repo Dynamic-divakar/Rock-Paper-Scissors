@@ -53,7 +53,7 @@
 ## ⚙️ Local Setup
 
 ```bash
-git clone https://github.com/your-username/rock-paper-scissors.git
+git clone https://github.com/Dynamic-divakar/rock-paper-scissors.git
 cd rock-paper-scissors
 npm install
 pm install express socket.io
